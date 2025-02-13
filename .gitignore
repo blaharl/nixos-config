@@ -9,6 +9,7 @@ files/common/.config/GIMP/2.10/*
 !files/common/.config/GIMP/2.10/gimprc
 !files/common/.config/GIMP/2.10/themes/
 files/common/.config/kitty/themes/
+files/common/.config/obs-studio/
 files/common/.config/quodlibet/*
 files/common/.config/qutebrowser/bookmarks/
 files/common/.config/qutebrowser/quickmarks
