@@ -24,7 +24,11 @@ in
 
       wev
       wl-clipboard
-      wofi # bemenu, fuzzel, tofi 
+      rofi-wayland
+      bemenu
+      fuzzel
+      tofi
+      wofi
 
       polkit_gnome
 
