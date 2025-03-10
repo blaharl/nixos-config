@@ -29,7 +29,6 @@
       ".config/keepassxc/keepassxc.ini".source = ../file/common/keepassxc_config.ini;
       ".cache/keepassxc/keepassxc.ini".source = ../file/common/keepassxc_cache.ini;
       ".config/goldendict/config".source = ../file/common/goldendict_config;
-      ".config/Vita3K/config.yml".source = ../file/common/Vita3K_config.yml;
     };
   };
 }
