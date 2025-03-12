@@ -7,6 +7,9 @@ let
     flakehome="home-manager boot --flake ~/.dotfiles#debian --impure";
     flakehome-now="home-manager switch --flake ~/.dotfiles#debian --impure";
     flakeupdate="cd ~/.dotfiles; nix flake update";
+
+    gd="QT_SCALE_FACTOR=1.5 goldendict & disown";
+    kritaa="QT_SCALE_FACTOR=1.3 krita & disown";
   };
   username = "user";
 in 
