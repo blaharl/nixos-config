@@ -12,7 +12,6 @@
       inkscape
       # libverto 
       libresprite
-      losslesscut-bin
       monero-cli
       monero-gui
       # sxhkd # simple X hotkey daemon
