@@ -8,6 +8,7 @@
       anki
       appimage-run
       dconf2nix
+      dualsensectl
       fwupd # sudo fwupdtool security
       home-manager
       keepassxc
