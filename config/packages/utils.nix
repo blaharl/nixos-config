@@ -18,6 +18,7 @@
       grimblast # screenshot
       libreoffice
       lm_sensors
+      localsend
       macchanger
       mangohud 
       megatools
