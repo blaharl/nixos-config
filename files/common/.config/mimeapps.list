@@ -13,11 +13,11 @@ video/mp4=mpv.desktop;
 video/webm=mpv.desktop;
 video/x-matroska=mpv.desktop;umpv.desktop;
 text/plain=nvim.desktop;
-text/html=firefox-esr.desktop;
+text/html=org.qutebrowser.qutebrowser.desktop;
 application/zip=peazip.desktop;
 text/x-c++src=nvim.desktop;
 audio/x-opus+ogg=mpv.desktop;
-application/xhtml+xml=firefox-esr.desktop;
+application/xhtml+xml=org.qutebrowser.qutebrowser.desktop;
 
 [Default Applications]
 application/octet-stream=nvim.desktop;
@@ -37,3 +37,8 @@ video/x-matroska=mpv.desktop;
 text/plain=nvim.desktop;
 x-scheme-handler/freetube=freetube.desktop
 x-scheme-handler/discord=vesktop.desktop
+text/html=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
