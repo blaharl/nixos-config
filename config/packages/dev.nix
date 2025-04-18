@@ -19,8 +19,6 @@
       nodejs 
       postgresql
       python3Full
-      # python.pkgs.pip
-      python311Packages.pip
       R
       rstudio
       rustup # collision with cargo
