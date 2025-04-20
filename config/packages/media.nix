@@ -9,7 +9,6 @@
       feh # lightweight image viewer
       ffmpeg
       foliate
-      gimp
       # gnome.eog # image viewer
       gnome-sound-recorder
       img2pdf

@@ -5,9 +5,7 @@ files/common/.config/FreeTube/*
 !files/common/.config/FreeTube/playlists.db
 !files/common/.config/FreeTube/profiles.db
 !files/common/.config/FreeTube/settings.db
-files/common/.config/GIMP/2.10/*
-!files/common/.config/GIMP/2.10/gimprc
-!files/common/.config/GIMP/2.10/themes/
+files/common/.config/GIMP/
 files/common/.config/kitty/themes/
 files/common/.config/obs-studio/
 files/common/.config/quodlibet/*
