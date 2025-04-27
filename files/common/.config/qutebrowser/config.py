@@ -190,3 +190,15 @@ c.session.lazy_restore = True
 c.content.webgl = False
 c.content.canvas_reading =  False
 c.content.webrtc_ip_handling_policy = 'disable-non-proxied-udp'
+
+c.content.blocking.adblock.lists = [
+        "https://easylist.to/easylist/easylist.txt", 
+        "https://easylist.to/easylist/easyprivacy.txt"
+        "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt"
+        "https://secure.fanboy.co.nz/fanboy-annoyance.txt"
+        "https://easylist.to/easylist/fanboy-social.txt"
+        "https://easylist-downloads.adblockplus.org/koreanlist/easylist.txt"
+        "https://easylist-downloads.adblockplus.org/koreanlist.txt"
+        "https://easylist-downloads.adblockplus.org/easylist.txt"
+        "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt"
+        ]
