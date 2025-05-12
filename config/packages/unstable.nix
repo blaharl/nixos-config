@@ -6,6 +6,7 @@
       freetube
       ghostty
       gimp3
+      logseq
       wikiman
       yazi
       yt-dlp

@@ -7,6 +7,7 @@ files/common/.config/FreeTube/*
 !files/common/.config/FreeTube/settings.db
 files/common/.config/GIMP/
 files/common/.config/kitty/themes/
+files/common/.config/Logseq/
 files/common/.config/obs-studio/
 files/common/.config/quodlibet/*
 files/common/.config/qutebrowser/bookmarks/
