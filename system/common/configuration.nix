@@ -116,7 +116,9 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
       source-han-mono
       source-han-serif
       source-han-serif-japanese
-      nerdfonts
+      nerd-fonts.meslo-lg
+      nerd-fonts.jetbrains-mono
+      # nerdfonts
       # (nerdfonts.override {fonts = ["Meslo"];})
     ];
     

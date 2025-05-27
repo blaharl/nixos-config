@@ -19,6 +19,7 @@
       libreoffice
       lm_sensors
       localsend
+      logseq
       macchanger
       mangohud 
       megatools

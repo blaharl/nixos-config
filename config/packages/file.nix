@@ -9,7 +9,7 @@
       # fuse-common 
       # grub2 
       gparted
-      # peazip
+      peazip
       p7zip
       qbittorrent
       # nfs-utils 

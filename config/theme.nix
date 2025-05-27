@@ -21,8 +21,10 @@ in
       adw-gtk3
 
       # fonts
-      nerdfonts
-      terminus-nerdfont 
+      # nerdfonts
+      nerd-fonts.meslo-lg
+      nerd-fonts.terminess-ttf
+      nerd-fonts.jetbrains-mono
 
       # swaycons  Window icons in Sway with Nerd Fonts
     ];

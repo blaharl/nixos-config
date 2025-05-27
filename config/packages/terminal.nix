@@ -51,6 +51,7 @@ in
       bat
       btop
       fastfetch
+      ghostty
       glow # cli markdown viewer
       gtop
       kitty
@@ -62,6 +63,8 @@ in
       tidy-viewer # csv pretty printer
       tmux
       tree
+      wikiman
+      yazi
     ];
 
     sessionVariables = {
