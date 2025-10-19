@@ -13,7 +13,7 @@ let
     chksum="/home/user/.dotfiles/scripts/chksum.sh";
     yloc="/home/user/.dotfiles/scripts/yt-local.sh";
     python="python3";
-    shizuku="adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh";
+    shizuku="adb shell /data/app/~~xRLFVsE7GO5RA1EBnl0B1g==/moe.shizuku.privileged.api--lXePlgZQxJGueiHbu5pbw==/lib/arm64/libshizuku.so";
 
     vpnon="mullvad connect; sleep 1; mullvad reconnect";
     vpnoff="mullvad disconnect";
