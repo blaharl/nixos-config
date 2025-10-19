@@ -10,6 +10,7 @@
       element-desktop
       inetutils
       librewolf
+      mullvad-browser
       # openssl 
       qutebrowser
       termshark
