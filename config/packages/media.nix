@@ -22,7 +22,6 @@
       obs-cmd
       obs-studio
       prismlauncher
-      quodlibet
       wf-recorder
       yewtube
       youtube-tui
