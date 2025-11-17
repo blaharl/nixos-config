@@ -76,8 +76,8 @@ in
 
   programs.neovim = {
       enable = true;
-      extraLuaPackages = ps: [ ps.magick ];
-      extraPackages = [ pkgs.imagemagick ];
+      # extraLuaPackages = ps: [ ps.magick ];
+      # extraPackages = [ pkgs.imagemagick ];
       # ... other config
   };
 

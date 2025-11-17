@@ -23,7 +23,6 @@
       rustup # collision with cargo
       sqlite
       # stdenv
-      texliveFull
       typst
       uv
     ];
