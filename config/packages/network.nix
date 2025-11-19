@@ -24,5 +24,9 @@
       wget
       wireshark
     ];
+
+    sessionVariables = {
+      BROWSER = "qutebrowser";
+    };
   };
 }
