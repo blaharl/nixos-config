@@ -37,9 +37,6 @@ in
     ];
     file = {
       ".config/hypr/hyprland.conf".source = ./file/hyprland/hyprland_hypr_config.conf;
-      ".config/fcitx5/config".source = ./file/hyprland/fcitx5_config_config;
-      ".config/fcitx5/profile".source = ./file/hyprland/fcitx5_profile_config;
-      ".config/fcitx5/conf/hangul.conf".source = ./file/hyprland/fcitx5_conf_hangul_config.conf;
       ".config/gtk-3.0/bookmarks".source = ./file/hyprland/gtk-3.0_bookmarks_config;
     };
     sessionVariables = {
