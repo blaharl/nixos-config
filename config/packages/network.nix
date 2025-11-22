@@ -5,12 +5,12 @@
     packages = with pkgs; [
       arti
       # chatterino2
-      claws-mail
       elinks
       element-desktop
       inetutils
       librewolf
       mullvad-browser
+      neomutt
       # openssl
       qutebrowser
       termshark
