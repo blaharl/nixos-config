@@ -2,8 +2,7 @@
 
 let
   userAliases = {
-    hyprunlock="pkill -USR1 hyprlock";
-    openhome="sudo nft -f ~/.dotfiles/scripts/excludeTraffic.rules; sleep 1; mullvad connect; sleep 1; mullvad reconnect; pkill hypridle";
+    openhome="sudo nft -f ~/.dotfiles/scripts/excludeTraffic.rules; sleep 1; mullvad connect; sleep 1; mullvad reconnect; caelestia shell idleInhibitor enable";
   };
 in
 
