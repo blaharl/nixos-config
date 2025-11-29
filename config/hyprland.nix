@@ -26,7 +26,6 @@ in
       hyprpicker
       inotify-tools
       jq
-      libqalculate
       networkmanagerapplet
       swappy
       wireplumber
