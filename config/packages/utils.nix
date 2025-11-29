@@ -24,7 +24,6 @@
       mangohud
       megatools
       pavucontrol
-      qalculate-qt
       slurp
       stow
       xfce.mousepad
