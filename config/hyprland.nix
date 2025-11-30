@@ -25,6 +25,7 @@ in
       ddcutil
       hyprpicker
       inotify-tools
+      libnotify
       jq
       networkmanagerapplet
       swappy
