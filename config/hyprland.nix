@@ -27,6 +27,7 @@ in
       libnotify
       jq
       networkmanagerapplet
+      (pass-wayland.withExtensions (ext: with ext; [pass-otp]))
       swappy
       wireplumber
       wl-clipboard
