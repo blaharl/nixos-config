@@ -17,7 +17,7 @@
       # ninja
       nodejs
       postgresql
-      python3Full
+      python312
       R
       rstudio
       rustup # collision with cargo

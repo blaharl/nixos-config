@@ -19,11 +19,6 @@
     rocmOverrideGfx = "11.0.1";
   };
 
-  services.open-webui = {
-    enable = true;
-    port = 22025;
-  };
-
   hardware = {
     graphics = {
       extraPackages = with pkgs; [

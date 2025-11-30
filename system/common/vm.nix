@@ -18,7 +18,7 @@
     virtiofsd
     spice spice-gtk
     spice-protocol
-    win-virtio
+    virtio-win
     win-spice
     # gnome.adwaita-icon-theme
     adwaita-icon-theme
@@ -31,8 +31,6 @@
       enable = true;
       qemu = {
         swtpm.enable = true;
-        ovmf.enable = true;
-        ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
     };
 
