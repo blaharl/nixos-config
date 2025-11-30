@@ -15,7 +15,6 @@
       goldendict-ng
       goverlay
       grim
-      grimblast # screenshot
       libreoffice
       lm_sensors
       localsend
