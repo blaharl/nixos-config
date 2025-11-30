@@ -57,6 +57,7 @@ in
       kitty
       libqalculate
       lsd
+      posting
       ripgrep
       ripgrep-all # grep from PDF, E-books, Office docs, zip, tar.gz, ...
       systemctl-tui
