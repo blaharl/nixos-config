@@ -15,7 +15,6 @@
       goldendict-ng
       goverlay
       grim
-      grimblast # screenshot
       inxi
       libreoffice
       lm_sensors
