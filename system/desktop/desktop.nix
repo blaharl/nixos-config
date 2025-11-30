@@ -28,18 +28,5 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    lact
-    radeon-profile
-  ];
-
-  systemd.packages = with pkgs; [ lact ];
-  systemd.services.lactd.wantedBy = ["multi-user.target"];
-
-  programs.corectrl = {
-    enable = true;
-    # gpuOverclock.enable = true;
-  };
-
-
+  environment.systemPackages = with pkgs; [ ];
 }
