@@ -34,9 +34,11 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-    userName = "user";
-    userEmail = "user@localhost";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "user";
+        email = "user@localhost";
+      };
       core = {
         sshCommand = "/usr/bin/env ssh -i /home/user/.ssh/id_github";
       };
