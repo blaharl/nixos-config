@@ -12,6 +12,7 @@
       git-filter-repo
       gnumake
       hugo
+      insomnia
       lazygit
       luarocks
       # ninja
