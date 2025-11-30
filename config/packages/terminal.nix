@@ -50,6 +50,7 @@ in
     packages = with pkgs; [
       bat
       btop
+      dash
       fastfetch
       ghostty
       glow # cli markdown viewer
