@@ -107,13 +107,11 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
     packages = with pkgs; [
       noto-fonts
       noto-fonts-cjk-sans
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       font-awesome
       source-han-sans
-      source-han-sans-japanese
       source-han-mono
       source-han-serif
-      source-han-serif-japanese
       nerd-fonts.meslo-lg
       nerd-fonts.jetbrains-mono
       # nerdfonts
