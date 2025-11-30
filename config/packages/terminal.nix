@@ -112,7 +112,7 @@ in
     options = [];
   };
 
-  programs.thefuck = {
+  programs.pay-respects = {
     enable = true;
   };
 }
