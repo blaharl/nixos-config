@@ -12,12 +12,13 @@
         xterm
       ];
     };
-    displayManager = {
-      sddm.enable = true;
-      sddm.wayland.enable = true;
-      autoLogin = {
-        enable = true;
-        user = "user";
+    greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd hyprland";
+          user = "user";
+        };
       };
     };
   };
