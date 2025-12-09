@@ -65,6 +65,7 @@ in
       tealdeer
       tidy-viewer # csv pretty printer
       tmux
+      tokei
       tree
       wikiman
       yazi
