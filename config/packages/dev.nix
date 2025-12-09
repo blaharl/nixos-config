@@ -17,7 +17,6 @@
       luarocks
       # ninja
       nodejs
-      postgresql
       python312
       R
       rstudio

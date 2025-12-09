@@ -14,6 +14,7 @@
       "/var/lib/flatpak"
       "/var/lib/libvirt"
       "/var/lib/nixos"
+      "/var/lib/postgresql"
       "/var/lib/private"
       # "/var/lib/systemd" #systemd stuff
       "/var/tmp"
