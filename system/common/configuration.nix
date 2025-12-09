@@ -59,8 +59,8 @@
   };
 
   environment.sessionVariables = {
-    XDG_PICTURES_DIR="~/Persistent/home/Pictures";
-    XDG_SCREENSHOTS_DIR="~/Persistent/home/Pictures/screenshots";
+    XDG_PICTURES_DIR="~/Persistent/Pictures";
+    XDG_SCREENSHOTS_DIR="~/Persistent/Pictures/screenshots";
     EDITOR="nvim";
   };
 
