@@ -26,6 +26,7 @@
       obs-cmd
       obs-studio
       prismlauncher
+      rmpc
       wf-recorder
       yewtube
       youtube-tui
