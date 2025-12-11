@@ -17,6 +17,7 @@
       luarocks
       # ninja
       nodejs
+      pgcli
       python312
       R
       rstudio
