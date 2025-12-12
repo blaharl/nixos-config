@@ -16,6 +16,8 @@ in
       xfce.thunar
       nwg-look
 
+      pyprland
+
       wev
 
       aubio
