@@ -13,6 +13,8 @@
       gnumake
       hugo
       insomnia
+      jjui
+      jujutsu
       lazygit
       luarocks
       # ninja
