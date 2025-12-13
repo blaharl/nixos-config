@@ -13,7 +13,8 @@
       gnumake
       hugo
       insomnia
-      lazygit
+      jjui
+      jujutsu
       luarocks
       # ninja
       nodejs
