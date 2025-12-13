@@ -100,6 +100,11 @@ in
     shellAliases = userAliases;
   };
 
+  programs.nushell = {
+    enable = true;
+    shellAliases = userAliases;
+  };
+
   programs.fzf = {
     enable = true;
     defaultOptions = [];
