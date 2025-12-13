@@ -10,6 +10,7 @@
       gef
       git
       git-filter-repo
+      gitleaks
       gnumake
       hugo
       insomnia
@@ -26,6 +27,7 @@
       rustup # collision with cargo
       sqlite
       # stdenv
+      trufflehog
       typst
       uv
     ];
