@@ -26,6 +26,11 @@ in
     file = {
       ".config/user-dirs.dirs".source = ./file/common/user-dirs_config.dirs;
     };
+
+    sessionPath = [
+      "$HOME/.local/bin"
+      "$HOME/.cargo/bin"
+    ];
   };
 
   dconf.settings = {
