@@ -69,6 +69,7 @@ in
       tree
       wikiman
       yazi
+      zbar
     ];
 
     sessionVariables = {
