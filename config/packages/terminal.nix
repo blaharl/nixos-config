@@ -116,6 +116,14 @@ in
     options = [];
   };
 
+  programs.atuin = {
+    enable = true;
+  };
+
+  programs.carapace = {
+    enable = true;
+  };
+
   programs.pay-respects = {
     enable = true;
   };
