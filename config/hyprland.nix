@@ -1,11 +1,5 @@
 { config, pkgs, ... }:
 
-let
-  userAliases = {
-    openhome="sudo nft -f ~/.dotfiles/scripts/excludeTraffic.rules; sleep 1; mullvad connect; sleep 1; mullvad reconnect; caelestia shell idleInhibitor enable";
-  };
-in
-
 {
   imports = [
     ./theme.nix
@@ -55,18 +49,5 @@ in
     cli = {
       enable = true; # Also add caelestia-cli to path
     };
-  };
-
-
-  programs.bash = {
-    shellAliases = userAliases;
-  };
-
-  programs.fish = {
-    shellAliases = userAliases;
-  };
-
-  programs.zsh = {
-    shellAliases = userAliases;
   };
 }
