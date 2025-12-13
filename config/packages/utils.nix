@@ -7,6 +7,7 @@
       android-tools
       anki
       appimage-run
+      bitcoin
       dconf2nix
       dualsensectl
       fwupd # sudo fwupdtool security
@@ -22,6 +23,7 @@
       macchanger
       mangohud
       megatools
+      monero-cli
       pavucontrol
       slurp
       stow
