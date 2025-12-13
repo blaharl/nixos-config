@@ -116,6 +116,17 @@ in
     options = [];
   };
 
+  programs.atuin = {
+    enable = true;
+    flags = [
+      "--disable-up-arrow"
+    ];
+  };
+
+  programs.carapace = {
+    enable = true;
+  };
+
   programs.pay-respects = {
     enable = true;
   };
