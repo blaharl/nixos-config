@@ -42,7 +42,6 @@ in
       dash
       fastfetch
       ghostty
-      glow # cli markdown viewer
       gtop
       kitty
       libqalculate
