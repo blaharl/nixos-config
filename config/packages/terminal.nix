@@ -7,6 +7,7 @@ let
     l="lsd -lA";
     ".." = "cd ..";
 
+    asd="atuin scripts delete";
     ase="atuin scripts edit";
     asg="atuin scripts get";
     asl="atuin scripts list";
@@ -15,11 +16,10 @@ let
 
     mdl="megatools dl --choose-files";
     ydl="yt-dlp";
-    python="python3";
 
-    vpnon="mullvad connect; sleep 1; mullvad reconnect";
+    vpnon="mullvad connect; mullvad reconnect";
     vpnoff="mullvad disconnect";
-    vpnloc="mullvad relay set location $(mullvad relay list | fzf | awk '{print $1}')";
+    vpnloc="~/.dotfiles/scripts/vpnloc.sh";
     wghome="sudo wg-quick up ~/.dotfiles/private/wg_home.conf";
     wgoff="sudo wg-quick down ~/.dotfiles/private/wg_home.conf";
 
@@ -56,7 +56,6 @@ in
       tokei
       tree
       wikiman
-      yazi
       zbar
     ];
 
@@ -117,6 +116,10 @@ in
   };
 
   programs.carapace = {
+    enable = true;
+  };
+
+  programs.yazi = {
     enable = true;
   };
 
