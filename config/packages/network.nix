@@ -11,10 +11,12 @@
       librewolf
       mullvad-browser
       neomutt
+      newsboat
       # openssl
       qutebrowser
       termshark
       tor-browser
+      urlscan
       v2ray
       vesktop
       w3m
