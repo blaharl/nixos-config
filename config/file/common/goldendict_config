@@ -1,6 +1,6 @@
 <config>
  <paths>
-  <path recursive="1">/home/user/Persistent/Documents/books/dict/</path>
+  <path recursive="1">/home/user/Persistent/Documents/books/dict/MDict/</path>
  </paths>
  <sounddirs/>
  <dictionaryOrder id="0" name="">

@@ -43,12 +43,14 @@ in
       fastfetch
       ghostty
       gtop
+      html2text
       kitty
       libqalculate
       lsd
       posting
       ripgrep
       ripgrep-all # grep from PDF, E-books, Office docs, zip, tar.gz, ...
+      sdcv
       systemctl-tui
       tealdeer
       tidy-viewer # csv pretty printer
@@ -62,6 +64,7 @@ in
     sessionVariables = {
       EDITOR = "nvim";
       MANPAGER="nvim +Man!";
+      STARDICT_DATA_DIR="/home/user/Persistent/Documents/books/dict/stardict/";
     };
   };
 
