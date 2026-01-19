@@ -20,6 +20,11 @@ let
     vpnon="mullvad connect; mullvad reconnect";
     vpnoff="mullvad disconnect";
     vpnloc="~/.dotfiles/scripts/vpnloc.sh";
+    openhome="~/.dotfiles/scripts/open_home.sh";
+
+    flake="~/.dotfiles/scripts/flake.sh";
+    swr="~/.dotfiles/private/swr.sh";
+
     wghome="sudo wg-quick up ~/.dotfiles/private/wg_home.conf";
     wgoff="sudo wg-quick down ~/.dotfiles/private/wg_home.conf";
 
