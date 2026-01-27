@@ -202,7 +202,6 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
     bluez-tools
     nftables
     neovim
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default
     nix-index
     patchelf
     distrobox
