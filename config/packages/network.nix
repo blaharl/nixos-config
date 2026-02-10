@@ -18,7 +18,6 @@
       tor-browser
       urlscan
       v2ray
-      vesktop
       w3m
       weechat
       # weechatScripts.weechat-matrix-bridge
