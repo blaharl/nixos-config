@@ -1,4 +1,10 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  pkgs-unstable,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -23,7 +29,7 @@
       libnotify
       jq
       networkmanagerapplet
-      (pass-wayland.withExtensions (ext: with ext; [pass-otp]))
+      (pass-wayland.withExtensions (ext: with ext; [ pass-otp ]))
       swappy
       wireplumber
       wl-clipboard
@@ -39,15 +45,9 @@
     };
   };
 
-  programs.caelestia = {
+  programs.dank-material-shell = {
     enable = true;
-    systemd = {
-      enable = false; # if you prefer starting from your compositor
-      target = "graphical-session.target";
-      environment = [];
-    };
-    cli = {
-      enable = true; # Also add caelestia-cli to path
-    };
+    enableSystemMonitoring = true;
+    dgop.package = pkgs-unstable.dgop;
   };
 }
