@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 # [ -n $DEVICE_IS_PC ] && echo "1" || echo "0"
 
