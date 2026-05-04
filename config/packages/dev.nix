@@ -23,7 +23,7 @@
       pgcli
       python312
       R
-      rstudio
+      # rstudio
       rustup # collision with cargo
       sqlite
       # stdenv
