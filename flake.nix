@@ -2,21 +2,23 @@
   description = "flake file";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     # nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager/release-25.11";
-    # home-manager.url = "github:nix-community/home-manager";
+    home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     impermanence.url = "github:nix-community/impermanence";
-    # stylix.url = "github:danth/stylix";
     dms = {
       url = "github:AvengeMedia/DankMaterialShell/stable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    danksearch = {
+      url = "github:AvengeMedia/danksearch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  # outputs = inputs@{ nixpkgs, impermanence, home-manager, stylix, nixpkgs-unstable, ... }:
+  # outputs = inputs@{ nixpkgs, impermanence, home-manager, nixpkgs-unstable, ... }:
   outputs =
     inputs@{
       nixpkgs,
@@ -41,14 +43,12 @@
             impermanence.nixosModules.impermanence
             ./system/import-desktop.nix
             home-manager.nixosModules.home-manager
-            # stylix.nixosModules.stylix
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.sharedModules = [
-                # stylix.homeManagerModules.stylix
                 inputs.dms.homeModules.dank-material-shell
-                # inputs.caelestia-shell.homeManagerModules.default
+                inputs.danksearch.homeModules.dsearch
               ];
               home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
               home-manager.users."${username}" = import ./config/desktop.nix;
@@ -62,14 +62,12 @@
             impermanence.nixosModules.impermanence
             ./system/import-laptop.nix
             home-manager.nixosModules.home-manager
-            # stylix.nixosModules.stylix
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.sharedModules = [
-                # stylix.homeManagerModules.stylix
                 inputs.dms.homeModules.dank-material-shell
-                # inputs.caelestia-shell.homeManagerModules.default
+                inputs.danksearch.homeModules.dsearch
               ];
               home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
               home-manager.users."${username}" = import ./config/laptop.nix;

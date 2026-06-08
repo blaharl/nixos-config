@@ -11,7 +11,7 @@
 
   services.ollama = {
     enable = true;
-    acceleration = "rocm";
+    package = pkgs.ollama-rocm;
     environmentVariables = {
       # used to be necessary, but doesn't seem to anymore
       HCC_AMDGPU_TARGET = "gfx1101";

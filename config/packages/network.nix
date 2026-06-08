@@ -14,6 +14,7 @@
       newsboat
       # openssl
       qutebrowser
+      signal-desktop
       termshark
       tor-browser
       urlscan

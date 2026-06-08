@@ -13,7 +13,7 @@
 
   home = {
     packages = with pkgs; [
-      xfce.thunar
+      thunar
       nwg-look
 
       pyprland
@@ -38,8 +38,8 @@
 
     ];
     file = {
-      ".config/hypr/hyprland.conf".source = ./file/hyprland/hyprland_hypr_config.conf;
       ".config/gtk-3.0/bookmarks".source = ./file/hyprland/gtk-3.0_bookmarks_config;
+      ".config/hypr/hyprland.lua".source = ./file/hyprland/hyprland_lua;
     };
     sessionVariables = {
     };
@@ -50,4 +50,6 @@
     enableSystemMonitoring = true;
     dgop.package = pkgs-unstable.dgop;
   };
+
+  programs.dsearch.enable = true;
 }

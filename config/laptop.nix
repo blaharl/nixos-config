@@ -18,23 +18,6 @@ in
     stateVersion = "24.05";
 
     packages = with pkgs; [
-      macchanger
-
-      # reaverwps-t6x
-      # reaverwps
-      bully
-      hcxtools
-      bettercap
-      wirelesstools
-      aircrack-ng
-
-      pixiewps
-      john
-      wordlists
-      wifite2
-      crunch
-      hashcat
-      hashcat-utils
     ];
 
     file = {

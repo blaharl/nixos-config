@@ -73,13 +73,6 @@ in
     };
   };
 
-  programs.neovim = {
-      enable = true;
-      # extraLuaPackages = ps: [ ps.magick ];
-      # extraPackages = [ pkgs.imagemagick ];
-      # ... other config
-  };
-
   programs.bash = {
     enable = true;
     shellAliases = userAliases;
@@ -128,6 +121,7 @@ in
   };
 
   programs.yazi = {
+    shellWrapperName = "y";
     enable = true;
   };
 

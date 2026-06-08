@@ -11,6 +11,7 @@
       dconf2nix
       dualsensectl
       fwupd # sudo fwupdtool security
+      go-ethereum
       home-manager
       keepassxc
       goldendict-ng
@@ -25,9 +26,10 @@
       megatools
       monero-cli
       pavucontrol
+      reth
       slurp
       stow
-      xfce.mousepad
+      mousepad
     ];
     file = {
       ".config/keepassxc/keepassxc.ini".source = ../file/common/keepassxc_config.ini;

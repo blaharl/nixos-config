@@ -25,6 +25,7 @@
       nerd-fonts.jetbrains-mono
 
       # swaycons  Window icons in Sway with Nerd Fonts
+      material-symbols
     ];
     file = {
     };
@@ -44,6 +45,11 @@
       package = pkgs.papirus-icon-theme;
     };
     gtk3 = {
+      extraConfig.gtk-application-prefer-dark-theme = true;
+    };
+    gtk4 = {
+      theme = config.gtk.theme;
+      colorScheme = "dark";
       extraConfig.gtk-application-prefer-dark-theme = true;
     };
   };

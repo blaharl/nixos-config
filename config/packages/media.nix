@@ -27,8 +27,8 @@
       prismlauncher
       rmpc
       wf-recorder
-      yewtube
       youtube-tui
+      youtube-viewer
     ];
     file = {
       ".config/mpv/mpv.conf".source = ../file/common/mpv_config.conf;

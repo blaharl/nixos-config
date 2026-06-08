@@ -22,7 +22,7 @@
       nodejs
       pgcli
       python312
-      R
+      # R
       # rstudio
       rustup # collision with cargo
       sqlite
