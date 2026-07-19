@@ -28,6 +28,7 @@
     users.user = {
       directories = [
         ".dotfiles"
+        ".cache/danksearch"
         ".cache/goldendict"
         ".cache/tealdeer"
 	      "Downloads"
