@@ -10,6 +10,7 @@
       gef
       git
       git-filter-repo
+      github-cli
       gitleaks
       gnumake
       hugo

@@ -25,6 +25,7 @@
       mangohud
       megatools
       monero-cli
+      onlyoffice-desktopeditors
       pavucontrol
       reth
       slurp

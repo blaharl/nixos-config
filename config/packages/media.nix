@@ -26,6 +26,7 @@
       obs-studio
       prismlauncher
       rmpc
+      rnote
       wf-recorder
       youtube-tui
       youtube-viewer
