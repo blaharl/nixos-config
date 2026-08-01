@@ -1,5 +1,10 @@
+{ config, ... }:
+
 let
   username = "user";
+  symlink = config.lib.file.mkOutOfStoreSymlink;
+  home_dir = "${config.home.homeDirectory}";
+  dotfiles = "${home_dir}/.dotfiles";
 in
 
 {
@@ -15,6 +20,13 @@ in
     # plain files is through 'home.file'.
     file = {
       ".config/user-dirs.dirs".source = ./file/common/user-dirs_config.dirs;
+
+      "Documents".source = symlink "${home_dir}/Persistent/Documents";
+      "Projects".source = symlink "${home_dir}/Persistent/Documents/Projects";
+      "Music".source = symlink "${home_dir}/Persistent/Music";
+      "Pictures".source = symlink "${home_dir}/Persistent/Pictures";
+      "Videos".source = symlink "${home_dir}/Persistent/Videos";
+      "shared".source = symlink "${home_dir}/Persistent/shared";
     };
 
     sessionPath = [

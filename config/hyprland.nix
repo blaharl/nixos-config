@@ -1,8 +1,15 @@
 {
+  config,
   pkgs,
   pkgs-unstable,
   ...
 }:
+
+let
+  symlink = config.lib.file.mkOutOfStoreSymlink;
+  home_dir = "${config.home.homeDirectory}";
+  dotfiles = "${home_dir}/.dotfiles";
+in
 
 {
   imports = [
@@ -37,7 +44,8 @@
     ];
     file = {
       ".config/gtk-3.0/bookmarks".source = ./file/hyprland/gtk-3.0_bookmarks_config;
-      ".config/hypr/hyprland.lua".source = ./file/hyprland/hyprland_lua;
+      ".config/hypr".source = symlink "${dotfiles}/hypr/.config/hypr";
+      ".config/DankMaterialShell".source = symlink "${dotfiles}/dms/.config/DankMaterialShell";
     };
     sessionVariables = {
     };
