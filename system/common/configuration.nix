@@ -2,13 +2,16 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{
+  lib,
+  pkgs,
+  ...
+}:
 
- {
-  imports =
-    [
-      #
-    ];
+{
+  imports = [
+    #
+  ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -20,7 +23,7 @@
 
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # networking.firewall.checkReversePath = "loose";
   services.resolved.enable = true;
@@ -38,30 +41,34 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
-    packages = [pkgs.terminus_font];
+    packages = [ pkgs.terminus_font ];
     # font = "Lat2-Terminus16";
     # keyMap = "us";
     useXkbConfig = true; # use xkb.options in tty.
   };
 
-  nix.settings.experimental-features = ["nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   fonts.fontDir.enable = true;
 
   nixpkgs.config = {
     permittedInsecurePackages = [
-    #  "python-2.7.18.7"
+      #  "python-2.7.18.7"
     ];
-    allowUnfreePredicate = pkg:
+    allowUnfreePredicate =
+      pkg:
       builtins.elem (lib.getName pkg) [
-      #  "amdgpu-pro"
+        #  "amdgpu-pro"
       ];
   };
 
   environment.sessionVariables = {
-    XDG_PICTURES_DIR="~/Persistent/Pictures";
-    XDG_SCREENSHOTS_DIR="~/Persistent/Pictures/screenshots";
-    EDITOR="nvim";
+    XDG_PICTURES_DIR = "~/Persistent/Pictures";
+    XDG_SCREENSHOTS_DIR = "~/Persistent/Pictures/screenshots";
+    EDITOR = "nvim";
   };
 
   # environment.shells = with pkgs; [ bash zsh fish ];
@@ -77,12 +84,14 @@
 
   services.flatpak.enable = true;
 
-  services.udev.packages = [( pkgs.writeTextDir "/etc/udev/rules.d/70-dualsensectl.rules" ''
-# PS5 DualSense controller over USB hidraw
-KERNEL=="hidraw*", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="0ce6", MODE="0666", TAG+="uaccess"
-# PS5 DualSense controller over bluetooth hidraw
-KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
-    '')];
+  services.udev.packages = [
+    (pkgs.writeTextDir "/etc/udev/rules.d/70-dualsensectl.rules" ''
+      # PS5 DualSense controller over USB hidraw
+      KERNEL=="hidraw*", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="0ce6", MODE="0666", TAG+="uaccess"
+      # PS5 DualSense controller over bluetooth hidraw
+      KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
+    '')
+  ];
 
   services = {
     xserver = {
@@ -91,12 +100,12 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
       # videoDrivers = [ "amdgpu-pro" ];
 
       xkb = {
-      # Configure keymap in X11
+        # Configure keymap in X11
         layout = "kr";
         model = "pc101";
         variant = "kr104";
         options = "korean";
-      # desktopManager.runXdgAutostartIfNone = true;
+        # desktopManager.runXdgAutostartIfNone = true;
       };
       excludePackages = with pkgs; [
       ];
@@ -121,9 +130,15 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
     fontconfig = {
       enable = true;
       defaultFonts = {
-        monospace = ["Meslo LG M Regular Nerd Font Complete Mono"];
-        serif = ["Noto Serif" "Source Han Serif"];
-	      sansSerif = ["Noto Sans" "Source Han Sans"];
+        monospace = [ "Meslo LG M Regular Nerd Font Complete Mono" ];
+        serif = [
+          "Noto Serif"
+          "Source Han Serif"
+        ];
+        sansSerif = [
+          "Noto Sans"
+          "Source Han Sans"
+        ];
       };
     };
   };
@@ -145,8 +160,9 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
 
   services.blueman.enable = true;
 
-  security.rtkit.enable = true; #rsh!
-  services.pipewire = { # rsh!
+  security.rtkit.enable = true; # rsh!
+  services.pipewire = {
+    # rsh!
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
@@ -163,18 +179,18 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
     ];
   };
 
-#  systemd.services.startup = {
-#    enable = true;
-#    description = "execute startup.sh";
-#    unitConfig = {
-#      # Type = "simple";
-#      Type = "Application";
-#    };
-#    serviceConfig = {
-#      ExecStart = "/bin/sh /nix/persist/home/user/Persistent/home/bin/startup.sh";
-#    };
-#    wantedBy = [ "multi-user.target" ];
-#  };
+  #  systemd.services.startup = {
+  #    enable = true;
+  #    description = "execute startup.sh";
+  #    unitConfig = {
+  #      # Type = "simple";
+  #      Type = "Application";
+  #    };
+  #    serviceConfig = {
+  #      ExecStart = "/bin/sh /nix/persist/home/user/Persistent/home/bin/startup.sh";
+  #    };
+  #    wantedBy = [ "multi-user.target" ];
+  #  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.mutableUsers = false;
@@ -260,4 +276,3 @@ KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0666", TAG+="uaccess"
   system.stateVersion = "24.05"; # Did you read the comment?
 
 }
-

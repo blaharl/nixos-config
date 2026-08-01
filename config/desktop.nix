@@ -1,7 +1,3 @@
-{ config, pkgs, inputs, ... }:
-
-# [ -n $DEVICE_IS_PC ] && echo "1" || echo "0"
-
 let
   username = "user";
 in
@@ -18,9 +14,6 @@ in
     homeDirectory = "/home/${username}";
 
     stateVersion = "24.05";
-
-    packages = with pkgs; [
-    ];
 
     file = {
     };

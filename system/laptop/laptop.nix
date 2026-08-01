@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -8,4 +8,3 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 }
-

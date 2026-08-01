@@ -7,4 +7,3 @@
     ibus.engines = with pkgs.ibus-engines; [ hangul ];
   };
 }
-

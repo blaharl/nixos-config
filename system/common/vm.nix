@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # Enable dconf (System Management Tool)
@@ -16,7 +16,8 @@
     virt-manager
     virt-viewer
     virtiofsd
-    spice spice-gtk
+    spice
+    spice-gtk
     spice-protocol
     virtio-win
     win-spice

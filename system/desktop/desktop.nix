@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   boot.initrd.kernelModules = [ "amdgpu" ];
@@ -23,7 +23,7 @@
     graphics = {
       extraPackages = with pkgs; [
         rocmPackages.clr.icd
-	      # rocm-opencl-runtime
+        # rocm-opencl-runtime
       ];
     };
   };

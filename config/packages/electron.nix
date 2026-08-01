@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   electronArgs = [
@@ -13,7 +13,7 @@ in
     packages = with pkgs; [
       (ungoogled-chromium.override {
         commandLineArgs = electronArgs;
-       })
+      })
     ];
   };
 }

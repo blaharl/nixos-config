@@ -1,5 +1,3 @@
-{ config, pkgs, inputs, ... }:
-
 let
   username = "user";
 in
@@ -17,14 +15,10 @@ in
 
     stateVersion = "24.05";
 
-    packages = with pkgs; [
-    ];
-
     file = {
     };
     sessionVariables = {
       DEVICE_IS_PC = "0";
-      # EDITOR = "emacs";
     };
   };
 }
