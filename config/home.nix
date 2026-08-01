@@ -1,5 +1,3 @@
-{ config, pkgs, pkgs-unstable, ... }:
-
 let
   username = "user";
 in
@@ -13,14 +11,6 @@ in
     homeDirectory = "/home/${username}";
     stateVersion = "24.05";
 
-    packages =
-      (with pkgs; [
-      ])
-
-      ++
-
-      (with pkgs-unstable; [
-      ]);
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
     file = {
@@ -30,6 +20,9 @@ in
     sessionPath = [
       "$HOME/.local/bin"
       "$HOME/.cargo/bin"
+      "$HOME/.dotfiles/scripts"
+      "$HOME/.dotfiles/scripts/aliases"
+      "$HOME/.dotfiles/private/scripts"
     ];
   };
 

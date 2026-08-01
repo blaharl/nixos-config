@@ -2,40 +2,14 @@
 
 let
   userAliases = {
-    ll="lsd -l";
-    la="lsd -A";
-    l="lsd -lA";
+    ll = "lsd -l";
+    la = "lsd -A";
+    l = "lsd -lA";
     ".." = "cd ..";
 
-    asd="atuin scripts delete";
-    ase="atuin scripts edit";
-    asg="atuin scripts get";
-    asl="atuin scripts list";
-    asn="atuin scripts new";
-    asr="atuin scripts run";
-
-    mdl="megatools dl --choose-files";
-    ydl="yt-dlp";
-
-    vpnon="mullvad connect; mullvad reconnect";
-    vpnoff="mullvad disconnect";
-    vpnloc="~/.dotfiles/scripts/vpnloc.sh";
-    openhome="~/.dotfiles/scripts/open_home.sh";
-
-    flake="~/.dotfiles/scripts/flake.sh";
-    swr="~/.dotfiles/private/swr.sh";
-
-    wghome="sudo wg-quick up ~/.dotfiles/private/wg_home.conf";
-    wgoff="sudo wg-quick down ~/.dotfiles/private/wg_home.conf";
-
-    q="exit";
-
-    v="nvim";
-    sv="sudo nvim";
-
-    mdv="litemdview";
-
-    clhist="rm ~/.bash_history; clear; history -c";
+    q = "exit";
+    v = "nvim";
+    sv = "sudo nvim";
   };
 in
 
@@ -68,8 +42,8 @@ in
 
     sessionVariables = {
       EDITOR = "nvim";
-      MANPAGER="nvim +Man!";
-      STARDICT_DATA_DIR="/home/user/Persistent/Documents/books/dict/stardict/";
+      MANPAGER = "nvim +Man!";
+      STARDICT_DATA_DIR = "/home/user/Persistent/Documents/books/dict/stardict/";
     };
   };
 
@@ -95,7 +69,7 @@ in
 
   programs.fzf = {
     enable = true;
-    defaultOptions = [];
+    defaultOptions = [ ];
   };
 
   programs.starship = {
@@ -106,7 +80,7 @@ in
 
   programs.zoxide = {
     enable = true;
-    options = [];
+    options = [ ];
   };
 
   programs.atuin = {
