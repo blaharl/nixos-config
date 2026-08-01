@@ -18,7 +18,7 @@ in
     file = {
     };
     sessionVariables = {
-      DEVICE_IS_PC = "0";
+      NIXOS_HOST = "laptop";
     };
   };
 }

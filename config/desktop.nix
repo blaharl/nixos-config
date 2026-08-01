@@ -19,7 +19,7 @@ in
     };
 
     sessionVariables = {
-      DEVICE_IS_PC = "1";
+      NIXOS_HOST = "debian";
     };
   };
 }
