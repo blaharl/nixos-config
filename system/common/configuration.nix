@@ -216,11 +216,12 @@
     bluetui
     bluez
     bluez-tools
-    nftables
+    distrobox
     neovim
+    nftables
     nix-index
     patchelf
-    distrobox
+    wireguard-tools
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
