@@ -19,6 +19,12 @@
     rocmOverrideGfx = "11.0.1";
   };
 
+  services.llama-cpp = {
+    enable = true;
+    package = pkgs.llama-cpp-rocm;
+    port = 8085;
+  };
+
   hardware = {
     graphics = {
       extraPackages = with pkgs; [
@@ -28,5 +34,5 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [ llama-cpp-rocm ];
 }
