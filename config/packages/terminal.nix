@@ -20,6 +20,7 @@ in
       btop
       dash
       fastfetch
+      fd
       ghostty
       gtop
       html2text
