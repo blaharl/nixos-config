@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 let
   username = "user";
 in
@@ -21,5 +23,9 @@ in
     sessionVariables = {
       NIXOS_HOST = "debian";
     };
+    packages = with pkgs; [
+      amdgpu_top
+      nvtopPackages.amd
+    ];
   };
 }
