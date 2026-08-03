@@ -13,6 +13,7 @@
       github-cli
       gitleaks
       gnumake
+      go
       hugo
       insomnia
       jjui

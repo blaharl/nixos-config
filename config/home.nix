@@ -35,6 +35,7 @@ in
       "$HOME/.dotfiles/scripts"
       "$HOME/.dotfiles/scripts/aliases"
       "$HOME/.dotfiles/private/scripts"
+      "$HOME/go/bin"
     ];
   };
 
