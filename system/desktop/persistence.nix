@@ -31,6 +31,7 @@
         ".dotfiles"
         ".cache/danksearch"
         ".cache/goldendict"
+        ".cache/huggingface"
         ".cache/mesa_shader_cache"
         ".cache/tealdeer"
         "Downloads"
@@ -40,6 +41,7 @@
         ".config/environment.d"
         ".local/state/nix"
         ".local/state/home-manager"
+        ".local/share/containers"
         ".local/share/nvim"
         ".local/share/Steam"
       ];

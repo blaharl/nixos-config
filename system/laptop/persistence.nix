@@ -38,6 +38,7 @@
         ".config/environment.d"
         ".local/state/nix"
         ".local/state/home-manager"
+        ".local/share/containers"
         ".local/share/nvim"
         ".local/share/Steam"
       ];
