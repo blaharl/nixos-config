@@ -4,7 +4,6 @@
   home = {
     packages = with pkgs; [
       cava
-      evince
       feh # lightweight image viewer
       ffmpeg
       foliate
@@ -27,6 +26,7 @@
       prismlauncher
       rmpc
       rnote
+      sioyek
       wf-recorder
       youtube-tui
       youtube-viewer

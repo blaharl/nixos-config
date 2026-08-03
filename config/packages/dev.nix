@@ -3,7 +3,7 @@
 {
   home = {
     packages = with pkgs; [
-      # cargo # not compatible with rustup
+      devenv
       gcc
       gdb
       gdbgui # browser based gdb frontend
@@ -26,7 +26,7 @@
       python312
       # R
       # rstudio
-      rustup # collision with cargo
+      rustup
       sqlite
       # stdenv
       trufflehog

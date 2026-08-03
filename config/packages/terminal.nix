@@ -17,8 +17,11 @@ in
   home = {
     packages = with pkgs; [
       bat
+      btdu
       btop
+      calcurse
       dash
+      duf
       fastfetch
       fd
       ghostty
@@ -27,6 +30,8 @@ in
       kitty
       libqalculate
       lsd
+      opencode
+      podman-tui
       posting
       ripgrep
       ripgrep-all # grep from PDF, E-books, Office docs, zip, tar.gz, ...

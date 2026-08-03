@@ -21,6 +21,7 @@
       libreoffice
       lm_sensors
       localsend
+      lsof
       macchanger
       mangohud
       megatools
