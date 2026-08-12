@@ -45,9 +45,6 @@
         name = "user";
         email = "user@localhost";
       };
-      core = {
-        sshCommand = "/usr/bin/env ssh -i /home/user/.ssh/id_github";
-      };
       diff = {
         tool = "nvimdiff";
       };
