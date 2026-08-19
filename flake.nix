@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
-    # nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +17,6 @@
     };
   };
 
-  # outputs = inputs@{ nixpkgs, impermanence, home-manager, nixpkgs-unstable, ... }:
   outputs =
     inputs@{
       nixpkgs,
@@ -71,33 +69,6 @@
               ];
               home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
               home-manager.users."${username}" = import ./config/laptop.nix;
-            }
-          ];
-        };
-      };
-      # WIP
-      homeConfigurations = {
-        debian = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [
-            ./config/desktop.nix
-            {
-              home = {
-                inherit username;
-                homeDirectory = "/home/${username}";
-              };
-            }
-          ];
-        };
-        laptop = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [
-            ./config/laptop.nix
-            {
-              home = {
-                inherit username;
-                homeDirectory = "/home/${username}";
-              };
             }
           ];
         };
