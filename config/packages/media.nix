@@ -32,7 +32,6 @@
       youtube-viewer
     ];
     file = {
-      ".config/mpv/mpv.conf".source = ../file/common/mpv_config.conf;
     };
   };
 }
