@@ -72,7 +72,7 @@
   powerManagement.resumeCommands = ''
     echo "Connecting to wifi after resuming.."
     sleep 5
-    rmmod iwlmvm iwlfifi
+    rmmod iwlmvm iwlwifi
     sleep 1
     modprobe iwlmvm iwlwifi
   '';
