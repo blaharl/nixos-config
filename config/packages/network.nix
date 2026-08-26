@@ -8,7 +8,9 @@
       elinks
       element-desktop
       inetutils
+      isync
       librewolf
+      mu
       mullvad-browser
       neomutt
       newsboat

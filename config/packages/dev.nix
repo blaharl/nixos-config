@@ -37,6 +37,15 @@
     };
   };
 
+  programs.emacs = {
+    enable = true;
+    package = pkgs.emacs-pgtk;
+    extraPackages = epkgs: [
+      epkgs.mu4e
+      epkgs.pdf-tools
+    ];
+  };
+
   programs.git = {
     enable = true;
     lfs.enable = true;

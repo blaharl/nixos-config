@@ -32,6 +32,7 @@ in
     sessionPath = [
       "$HOME/.local/bin"
       "$HOME/.cargo/bin"
+      "$HOME/.config/emacs/bin"
       "$HOME/.dotfiles/scripts"
       "$HOME/.dotfiles/scripts/aliases"
       "$HOME/.dotfiles/private/scripts"
