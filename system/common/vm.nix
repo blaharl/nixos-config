@@ -7,8 +7,6 @@
   # Add user to libvirtd group
   users.users.user.extraGroups = [
     "libvirtd"
-    "docker"
-    "podman"
   ];
 
   # Install necessary packages

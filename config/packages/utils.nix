@@ -31,6 +31,7 @@
       reth
       slurp
       stow
+      tree-sitter
       mousepad
     ];
     file = {
