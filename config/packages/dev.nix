@@ -3,6 +3,8 @@
 {
   home = {
     packages = with pkgs; [
+      cargo-binstall
+      cmake
       devenv
       gcc
       gdb
@@ -19,6 +21,7 @@
       jjui
       jujutsu
       lazygit
+      libclang
       luarocks
       # ninja
       nodejs

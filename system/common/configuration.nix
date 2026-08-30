@@ -161,6 +161,7 @@
   services.blueman.enable = true;
 
   security.rtkit.enable = true; # rsh!
+  security.doas.enable = true;
   services.pipewire = {
     # rsh!
     enable = true;
@@ -198,9 +199,9 @@
   users.users.user = {
     isNormalUser = true;
     extraGroups = [
-      "wheel"
+      "wheel" # Enable ‘sudo’ for the user.
       "wireshark"
-    ]; # Enable ‘sudo’ for the user.
+    ];
 
     packages = with pkgs; [
     ];

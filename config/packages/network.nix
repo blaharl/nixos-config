@@ -11,7 +11,6 @@
       librewolf
       mullvad-browser
       neomutt
-      newsboat
       # openssl
       qutebrowser
       signal-desktop
