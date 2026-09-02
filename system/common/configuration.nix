@@ -143,6 +143,16 @@
     };
   };
 
+  system.userActivationScripts = {
+    onlyoffice-cjk-fonts = {
+      text = ''
+        mkdir -p ~/.local/share/fonts
+        cp --update=none ${pkgs.noto-fonts-cjk-sans}/share/fonts/opentype/noto-cjk/* ~/.local/share/fonts/
+        chmod 444 ~/.local/share/fonts/*
+      '';
+    };
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
